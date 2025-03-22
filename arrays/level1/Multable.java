@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Multable{
+	public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	int[] table = new int[10];
+	System.out.println("Enter the number: ");
+	int number = input.nextInt();
+	
+	for (int i=1;i<11;i++){
+		table[i-1] = i*number;
+		}
+	for (int i=1;i<11;i++){
+		System.out.println( i + "*" + number + "=" + table[i-1]);
+	}
+}
+}

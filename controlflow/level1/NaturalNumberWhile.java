@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class NaturalNumberWhile {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+		System.out.println("Enter the  number: ");
+		int number = input.nextInt();
+		int sumwhile=0;
+		int sumformula=0;
+		if (number>0){
+			sumformula = number * (number+1)/2;
+			
+			while (number>0){
+				sumwhile+=number;
+				number--;
+			}
+			}
+		else{
+			System.out.println("Not a Natural Number: ");
+		}
+		System.out.println("The sum of natural numbers using formula is " + sumformula + " and using while loop is " + sumwhile);
+	}
+}

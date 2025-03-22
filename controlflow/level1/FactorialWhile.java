@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class FactorialWhile {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+		System.out.println("Enter the  number: ");
+		int number = input.nextInt();
+		int factorial =1;
+		if (number>0){
+			while(number>=1){
+			factorial*=number;
+			number--;
+			}
+		}
+		System.out.println("The factorial is " + factorial);
+	}
+}

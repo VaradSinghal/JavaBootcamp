@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class NaturalNumberFor {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+		System.out.println("Enter the  number: ");
+		int number = input.nextInt();
+		int sumfor=0;
+		int sumformula=0;
+		if (number>0){
+			sumformula = number * (number+1)/2;
+			
+			for(int i = number; i>0;i--){
+				sumfor+=i;
+				
+			}
+			}
+		else{
+			System.out.println("Not a Natural Number: ");
+		}
+		System.out.println("The sum of natural numbers using formula is " + sumformula + " and using for loop is " + sumfor);
+	}
+}

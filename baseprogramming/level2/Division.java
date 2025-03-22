@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Division{
+    public static void main(String[] args) {
+			Scanner input = new Scanner(System.in);
+			System.out.println("Enter the first number: ");
+			double number1 = input.nextDouble();
+			System.out.println("Enter the second number: ");
+			double number2 = input.nextDouble();
+			double qoutient = number1/number2;
+			double remainder = number1%number2;
+			System.out.println("The Quotient is " + qoutient + " and Reminder is " + remainder); 
+	}
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class GreaterOfThree {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+		System.out.println("Enter the first number: ");
+		int number1 = input.nextInt();
+		System.out.println("Enter the second number: ");
+		int number2 = input.nextInt();
+		System.out.println("Enter the third number: ");
+		int number3 = input.nextInt();
+		if (number1 > number2 && number1 > number3){
+			System.out.println(number1 + " is the greatest of all.");
+			}
+		else if (number2 > number3){
+			System.out.println(number2 + " is the greatest of all.");
+			}
+		else{
+			System.out.println(number3 + " is the greatest of all.");
+			}
+	}
+}
