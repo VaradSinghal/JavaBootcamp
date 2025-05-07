@@ -6,6 +6,7 @@ public class FootballTeamHeights {
         int[] heights = new int[11];
         Random rand = new Random();
 
+        // Generate random heights between 150 and 250
         for (int i = 0; i < heights.length; i++) {
             heights[i] = 150 + rand.nextInt(101);
         }
