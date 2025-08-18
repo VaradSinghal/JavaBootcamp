@@ -21,7 +21,6 @@ import java.util.Scanner;
 			else{
 				System.out.println("Anthony is youngest");
 			}
-			int anthonyHeight = input.nextInt();
 			if (akbarHeight >amarHeight && akbarHeight> anthonyHeight){
 				System.out.println("Akbar is tallest");
 			}

@@ -6,7 +6,7 @@ class  Break{
 		double total = 0.0;
 		double userIn = 0.0;
 		while(true){
-			Syste,.out.println("Enter the number: ");
+			System.out.println("Enter the number: ");
 			userIn = input.nextDouble();
 			if (userIn <=0){
 				break;
