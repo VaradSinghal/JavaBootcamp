@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Room {
-    private String roomNumber;
+    private final String roomNumber;
     private String roomType;
     private double pricePerNight;
     private boolean isAvailable;
@@ -85,10 +85,9 @@ class Booking {
     private Guest guest;
     private Room room;
     private String checkInDate;
-    private String checkOutDate;
-    private double totalAmount;
+    private final String checkOutDate;
+    private final double totalAmount;
 
-    private static int totalBookings = 0;
     private static double hotelRevenue = 0.0;
     private static String hotelName = "GrandStay";
     private static Map<String, Integer> roomTypeCounter = new HashMap<>();
@@ -101,12 +100,15 @@ class Booking {
         this.checkOutDate = checkOutDate;
         this.totalAmount = totalAmount;
 
-        totalBookings++;
         hotelRevenue += totalAmount;
         roomTypeCounter.put(room.getRoomType(), roomTypeCounter.getOrDefault(room.getRoomType(), 0) + 1);
 
         guest.addBookingHistory(bookingId);
         room.setAvailable(false);
+    }
+
+    public Booking(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
     public String getBookingId() {
